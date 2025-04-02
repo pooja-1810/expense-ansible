@@ -25,7 +25,7 @@
   - name: connect mysql server
     community.mysql.mysql_info: # we have this in mysql community
       login_user: root
-      login_password: : "{{ mysql_root_password }}"
+      login_password: "{{ mysql_root_password }}"
       login_host: "{{ login_host }}"
     ignore_errors: true
     register: mysql_info
